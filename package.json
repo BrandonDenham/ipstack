@@ -1,0 +1,17 @@
+{
+  "name": "ipstackclient",
+  "version": "1.0.0",
+  "description": "node.js client for apis maintained at ipstack.com for identification by ip address",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "ip",
+    "client",
+    "ipstack"
+  ],
+  "author": "bdenham14@gmail.com",
+  "license": "MIT"
+}
