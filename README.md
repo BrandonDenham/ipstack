@@ -38,7 +38,7 @@ IpStackClient.requesterLookup(options)
 The results will be the parsed json of the corresponding endpoints documented https://ipstack.com/documentation.
 
 ### Options Object
-The options object has 4 optional parameters also documented at ipStack.  The output parameter is always undefined
+The options object has 4 optional parameters also documented at ipStack.  The output parameter is always json and cannot be overwritten.
 ```
 
 {

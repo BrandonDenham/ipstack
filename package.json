@@ -1,6 +1,6 @@
 {
   "name": "ipstackclient",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "node.js client for apis maintained at ipstack.com for identification by ip address",
   "main": "src/index.js",
   "scripts": {
