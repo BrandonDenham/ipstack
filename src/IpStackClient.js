@@ -42,7 +42,6 @@ class IpStackClient {
     return this._lookUp(ipAddress, options);
   }
 
-
   /**
   * Bulk lookup to get ip info.  Takes a single ip address.
   *
@@ -72,7 +71,7 @@ class IpStackClient {
 }
 
 /**
-* Create sets up the ipStatck client
+* Create sets up the ipStack client
 *
 * @param {string} accessKey - required access key from IpStack
 * @param {boolean} ssl - boolean for whether to use ssl defaults to false
