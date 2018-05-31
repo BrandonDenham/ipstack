@@ -12,6 +12,10 @@
     "client",
     "ipstack"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrandonDenham/ipstack.git"
+  },
   "author": "bdenham14@gmail.com",
   "license": "MIT"
 }
