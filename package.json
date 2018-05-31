@@ -17,5 +17,8 @@
     "url": "https://github.com/BrandonDenham/ipstack.git"
   },
   "author": "bdenham14@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.1.2"
+  }
 }
