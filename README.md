@@ -6,7 +6,8 @@ https://ipstack.com/ provides a well documented set of 3 apis to get geolocation
 ## Installation
 Installing the library with npm
 ```
-npm install ipstack
+
+npm i ipstackclient
 ```
 
 ## Usage
@@ -15,7 +16,7 @@ In order to use the client there are 2 steps first an api key must be created wi
 ### Create IpStackClient
 The create method takes 2 parameters, the access token and optional ssl boolean (defaults to false). Ssl true only works with premium ipStack accounts.
 ```
-const ipstack = require('ipstack');
+const ipstack = require('ipstackclient');
 const IpStackClient = ipstack.create('YOUR_ACCESS_TOKEN', true);
 ```
 
