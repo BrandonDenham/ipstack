@@ -6,7 +6,10 @@ const ROOT_RESOURCE_URL_SECURE = `https://api.ipstack.com/`;
 class Api {
   constructor(apiKey, ssl = false) {
     if (!apiKey) {
-      throw new Error(`IP Stack API requires API Key`);
+      console
+        .error(
+          new Error(`IP Stack API requires API Key`)
+        );
     }
     this.rootUrl = ssl ? ROOT_RESOURCE_URL_SECURE : ROOT_RESOURCE_URL;
     this.apiKey = apiKey;

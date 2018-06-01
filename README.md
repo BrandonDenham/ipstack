@@ -24,9 +24,12 @@ const IpStackClient = ipstack.create('YOUR_ACCESS_TOKEN', true);
 ```
 
 ### IP lookup functions
-The IP lookup functions all return promises.
+The IP lookup functions all return promises. The node ClientRequest object can also be passed to standardLookup instead of an ipAddress string. The algorithm for using the request object looks at the x-forwarded-for header, then the remoteAddress as a backup.
+
 ```
 
+IpStackClient.standardLookup(ClientRequest, options)
+  .then(standardLookup => console.log(standardLookup));
 IpStackClient.standardLookup('IP_ADDRESS', options)
   .then(standardLookup => console.log(standardLookup));
 IpStackClient.bulkLookup(['IP_ADDRESS', 'OTHER_IP_ADDRESS'], options)
