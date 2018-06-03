@@ -5,7 +5,7 @@ https://ipstack.com/ provides a well documented set of 3 apis to get geolocation
 
 ## Installation
 Installing the library with npm
-```
+```js
 
 npm i ipstackclient
 
@@ -16,7 +16,7 @@ In order to use the client there are 2 steps first an api key must be created wi
 
 ### Create IpStackClient
 The create method takes 2 parameters, the access token and optional ssl boolean (defaults to false). Ssl true only works with premium ipStack accounts.
-```
+```js
 
 const ipstack = require('ipstackclient');
 const IpStackClient = ipstack.create('YOUR_ACCESS_TOKEN', true);
@@ -26,7 +26,7 @@ const IpStackClient = ipstack.create('YOUR_ACCESS_TOKEN', true);
 ### IP lookup functions
 The IP lookup functions all return promises. The node ClientRequest object can also be passed to standardLookup instead of an ipAddress string. The algorithm for using the request object looks at the x-forwarded-for header, then the remoteAddress as a backup.
 
-```
+```js
 
 IpStackClient.standardLookup(ClientRequest, options)
   .then(standardLookup => console.log(standardLookup));
@@ -42,7 +42,7 @@ The results will be the parsed json of the corresponding endpoints documented ht
 
 ### Options Object
 The options object has 4 optional parameters also documented at ipStack.  The output parameter is always json and cannot be overwritten.
-```
+```js
 
 {
   fields: Array<String>,  // defaults undefined this is an array of strings
