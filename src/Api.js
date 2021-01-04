@@ -43,6 +43,8 @@ class Api {
     ).then(response => response.json()).then(response => {
       callback(response);
       return response;
+    }).catch((error) => {
+      return new Error(`IP Stack API error on fetch: ${error.name}`)
     });
   }
 
